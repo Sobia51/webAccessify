@@ -1,0 +1,97 @@
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;}
+
+.bg-img {
+ 
+  background-image: url("images/bg.jpg");
+   height: 100%;
+  min-height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  margin: 30px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(3, 19, 109, 0);
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(1, 33, 53, 0.671);
+  color: rgb(255, 255, 255);
+}
+.text {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  color:#f2f2f2;
+  font-size: 50px;
+  text-shadow: 2px 6px #3a3a3a79;
+}
+.sub-text {
+  position: absolute;
+  top: 390px;
+  left: 30px;
+  color:#f2f2f2;
+  font-size: 22px;
+  
+}
+
+.button1 {
+  background-color: rgb(1, 33, 53);
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 13px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-top: 450px;
+  margin-left: 30px;
+  font-size: 18px;
+ 
+}
+
+.button1:hover {
+  background-color: #f1f1f1bb;
+  color:rgb(2, 48, 107);
+}
+.button2 {
+  background-color: rgb(245, 248, 250);
+  border: none;
+  color: rgb(2, 48, 107);
+  padding: 13px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-top: 450px;
+  margin-left: 30px;
+  font-size: 18px;
+ 
+}
+
+.button2:hover {
+  background-color: #011b63b6;
+  color:blanchedalmond;
+}
