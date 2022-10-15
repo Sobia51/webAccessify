@@ -138,12 +138,11 @@ body {font-family: Arial, Helvetica, sans-serif}
   border-radius: 20px;
   font-size: 1.025rem;
   padding: 0.95rem;
-  
   border:none;
 }
 .text-container
 {
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
   width: 100%;
   padding: 20px;
@@ -157,4 +156,29 @@ body {font-family: Arial, Helvetica, sans-serif}
   color : rgb(48, 47, 47);
   font-size: clamp(1.25rem, 1.9vw, 2.5rem);
   
+}
+.footer-container{
+ 
+ background-image: url("images/footer.png");
+   height: auto;
+   max-width:100%;
+   min-height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.footer-container .footer-box{
+border-color: red;
+  background-color: rgb(0, 117, 126);
+  height:28.25rem;
+  position: absolute;
+  top: 340%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 99%;
+  padding: 20px;
+  text-align: center;
+  vertical-align:middle;
 }
