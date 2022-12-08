@@ -44,15 +44,9 @@ function Widget() {
     </Radio.Group>
  </Col>
 </Row>
-    
-       
-    
-    
-   </>
-   
+ </>   
   )
 }
-
 export default Widget
 
 
