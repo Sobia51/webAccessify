@@ -12,12 +12,12 @@ main{
 }
 .sidebar{
     background: rgb(0, 73, 67);
-    color: #fff;
-    height: 100vh;
-    width: 100px;
-  margin: 0;
-  padding : 0;
-    transition: all 0.5s;
+    color: #ffffff;
+    height:96vh;
+   
+  margin: 0%;
+  padding : 2%;
+     transition: all 0.5s; 
 }
 .top_section{
     display: flex;
