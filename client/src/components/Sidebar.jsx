@@ -30,7 +30,7 @@ const Sidebar = ({children}) => {
             icon:<FaCogs/>
         },
         {
-            path:"/Installs",
+            path:"/Installation",
             name:"Installations",
             icon:<FaDownload/>
         },
