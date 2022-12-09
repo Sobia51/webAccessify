@@ -19,7 +19,7 @@ function Widget() {
   return (
     <>
    
-  <Row gutter={[8, 24]} style={{marginTop:'20%',marginLeft:'12%'}}>
+  <Row gutter={[8, 24]} style={{marginTop:'16%',marginLeft:'12%'}}>
   <Col span={12}><h2>Enable Widget</h2></Col>
   <Col span={12}> <Switch defaultChecked onChange={onChange} style={{marginLeft:'30%'}} /></Col>
 
