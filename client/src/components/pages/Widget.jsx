@@ -1,7 +1,7 @@
 import React , {useState}from 'react'
 import { Radio, Switch,Row ,Col} from 'antd';
 import { Form } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+
 
 function Widget() {
     const onChange = (checked) => {
@@ -18,7 +18,8 @@ function Widget() {
    
   return (
     <>
-   
+     <div className="container" style={{backgroundColor:'#8BBDB428',height:'100%',width:'100%'}}>
+      <div className='Rows'>
   <Row gutter={[8, 24]} style={{marginTop:'16%',marginLeft:'12%'}}>
   <Col span={12}><h2>Enable Widget</h2></Col>
   <Col span={12}> <Switch defaultChecked onChange={onChange} style={{marginLeft:'30%'}} /></Col>
@@ -44,10 +45,11 @@ function Widget() {
     </Radio.Group>
  </Col>
 </Row>
+</div>
+</div>
  </>   
   )
+
 }
 export default Widget
-
-
 
