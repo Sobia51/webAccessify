@@ -40,13 +40,13 @@ const Sidebar = ({children}) => {
             icon:<FaRegChartBar/>
         },
         {
-            path:"/W_Menu",
+            path:"/W_menu",
             name:"Widget_Menu",
             icon:<FaShoppingBag/>
         },
         {
-            path:"/Subscriptions",
-            name:"Subscriptions",
+            path:"/Subscription",
+            name:"Subscription",
             icon:<FaCcAmazonPay/>
         },
         {
