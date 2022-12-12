@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Dashboard from './components/pages/Dashboard';
 import Installation from './components/pages/Installation';
+import Profile from './components/pages/Profile';
 import Statics from './components/pages/Statics';
 import Subscription from './components/pages/Subscription';
 import Widget from './components/pages/Widget';
@@ -20,6 +21,7 @@ function App() {
 <Route path ="/Statics" element ={<Statics/>}/>
 <Route path ="/W_menu" element ={<W_menu/>}/>
 <Route path ="/Subscription" element ={<Subscription/>}/>
+<Route path ="/Profile" element ={<Profile/>}/>
 </Routes>
 </Sidebar>
       
