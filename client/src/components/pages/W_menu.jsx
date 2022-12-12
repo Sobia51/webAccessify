@@ -7,7 +7,7 @@ function W_menu() {
     }
   return (
     <>
-     <div className='text' style={{width:'100%',marginLeft:'25%',marginTop:'3%',marginBottom:'3%'}}><h2>Have a look on statics of each feature on your website</h2>
+     <div className='text' style={{width:'100%',marginLeft:'25%',marginTop:'3%',marginBottom:'3%'}}><h2>Customize your Website's Widget Menu </h2>
          </div>  
     <div className='container' style={{backgroundColor:'#8BBDB428',height:'70%',width:'100%'}}>
         <div className='container_1' style={{border:'red'}}>
