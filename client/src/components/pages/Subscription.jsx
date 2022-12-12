@@ -1,44 +1,7 @@
 import React from 'react'
 import {Row,Col, Table} from 'antd'
 const Subscription=()=> {
-    // const columns = [
-    
-    //     {
-    //       title: 'Subscription_Type',
-    //       dataIndex: 'SubType',
-    //     },
-    //     {
-    //       title: 'Subscription_Duration',
-    //       dataIndex: 'SubDate',
-         
-    //     },
-    //     {
-    //         title: 'Amount',
-    //         dataIndex: 'amount',
-    //       },
-    //       {
-    //         title: 'Status',
-    //         dataIndex: 'status',
-    //       }
-    //   ];
-    //   const data = [
-    //     {
-    //       key: '1',
-         
-    //       SubType: 'Standard',
-    //      SubDate:'23/4/2023-12/5/2023',
-    //       amount:'30$',
-    //       status:'InActive'
-    //     },
-    //     {
-    //         key: '1',
-    //         No:'1',
-    //         SubType: 'Standard',
-    //         SubDate: '7/12/2023',
-    //         expiryDate: '8/7/2023',
-    //         amount:'30$',
-    //         status:'Active'
-    //       },
+   
         
     const columns = [
         {
