@@ -18,7 +18,15 @@ function Widget() {
    
   return (
     <>
-     <div className="container" style={{backgroundColor:'#8BBDB428',height:'100%',width:'100%'}}>
+     <div className="container" 
+     style={{
+      backgroundColor:'#8BBDB428' ,
+       height:'100%',width:'100%', 
+       backgroundImage:"url(images/2.jpg)",
+        backgroundPosition:'relative',
+        backgroundSize:'cover',
+        backgroundRepeat:'no-repeat'}} >
+
       <div className='Rows'>
   <Row gutter={[8, 24]} style={{marginTop:'16%',marginLeft:'12%'}}>
   <Col span={12}><h2>Enable Widget</h2></Col>
