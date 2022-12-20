@@ -72,9 +72,6 @@ function Edit() {
       >
         <Input.Password />
       </Form.Item>
-
-      
-
       <Form.Item
         wrapperCol={{
           offset: 8,
