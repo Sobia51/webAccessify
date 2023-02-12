@@ -1,22 +1,22 @@
 import { BellFilled, MailOutlined } from "@ant-design/icons";
 import { Badge, Drawer, Image, List, Space, Typography } from "antd";
-// import { useEffect, useState } from "react";
-// import { getComments, getOrders } from "../../API";
+ import { useEffect, useState } from "react";
+ import { getComments, getOrders } from "../API";
 
 function Header() {
-//   const [comments, setComments] = useState([]);
-//   const [orders, setOrders] = useState([]);
-//   const [commentsOpen, setCommentsOpen] = useState(false);
-//   const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [comments, setComments] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [commentsOpen, setCommentsOpen] = useState(false);
+  const [notificationsOpen, setNotificationsOpen] = useState(false);
 
-//   useEffect(() => {
-//     getComments().then((res) => {
-//       setComments(res.comments);
-//     });
-//     getOrders().then((res) => {
-//       setOrders(res.products);
-//     });
-//   }, []);
+  useEffect(() => {
+    getComments().then((res) => {
+      setComments(res.comments);
+    });
+    getOrders().then((res) => {
+      setOrders(res.products);
+    });
+  }, []);
 
   return (
     <div className="AppHeader">
@@ -29,21 +29,21 @@ function Header() {
         <Badge count={10} dot>
           <MailOutlined
             style={{ fontSize: 24 }}
-            // onClick={() => {
-            //   setCommentsOpen(true);
-            // }}
+            onClick={() => {
+              setCommentsOpen(true);
+            }}
           />
         </Badge>
         <Badge count={20}>
           <BellFilled
             style={{ fontSize: 24 }}
-            // onClick={() => {
-            //   setNotificationsOpen(true);
-           // }}
+            onClick={() => {
+              setNotificationsOpen(true);
+           }}
           />
         </Badge>
       </Space>
-      {/* <Drawer
+      <Drawer
         title="Comments"
         open={commentsOpen}
         onClose={() => {
@@ -77,7 +77,7 @@ function Header() {
             );
           }}
         ></List>
-      </Drawer> */}
+      </Drawer>
     </div>
   );
 }
