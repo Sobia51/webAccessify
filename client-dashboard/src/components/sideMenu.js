@@ -6,18 +6,19 @@ import {
   } from "@ant-design/icons";
   import { Menu } from "antd";
   import { useEffect, useState } from "react";
-//   import { useLocation, useNavigate } from "react-router-dom";
+ import { useLocation, useNavigate } from "react-router-dom";
   
   function SideMenu() {
-    // const location = useLocation();
-    // const [selectedKeys, setSelectedKeys] = useState("/");
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [selectedKeys, setSelectedKeys] = useState("/");
   
-    // useEffect(() => {
-    //   const pathName = location.pathname;
-    //   setSelectedKeys(pathName);
-    // }, [location.pathname]);
+    useEffect(() => {
+      const pathName = location.pathname;
+      setSelectedKeys(pathName);
+    }, [location.pathname]);
   
-    // const navigate = useNavigate();
+    
     return (
       <div className="SideMenu">
         <Menu
@@ -25,14 +26,19 @@ import {
           mode="vertical"
           onClick={(item) => {
             //item.key
-           // navigate(item.key);
+            navigate(item.key);
           }}
-          //selectedKeys={[selectedKeys]}
+          selectedKeys={[selectedKeys]}
           items={[
             {
-              label: "Dashbaord",
+              label: "Dashboard",
               icon: <AppstoreOutlined />,
               key: "/",
+            },
+            {
+              label: "Statics",
+              key: "/statics",
+              icon: <ShopOutlined />,
             },
             {
               label: "Inventory",
