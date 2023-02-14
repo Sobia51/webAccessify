@@ -37,7 +37,8 @@ function Widget() {
                     <Form.Control type="color" id="colorInput" defaultValue="#03A388" title="Choose your color"/>
  </Col>
  <Col span={12}><h2>Change Widget Size</h2></Col>
-  <Col span={12}>  <Radio.Group onChange={onchange} style={{marginLeft:'10%'}}value={value}>
+  <Col span={12}>  
+  <Radio.Group onChange={onchange} style={{marginLeft:'10%'}}value={value}>
       <Radio value={1}><h3>Small</h3></Radio>
       <Radio value={2}><h3>Medium</h3></Radio>
       <Radio value={3}><h3>Large</h3></Radio>
