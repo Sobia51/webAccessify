@@ -1,8 +1,10 @@
 import {
     AppstoreOutlined,
     ShopOutlined,
-    ShoppingCartOutlined,
     UserOutlined,
+    DownloadOutlined ,
+    BankOutlined,
+    SettingOutlined
   } from "@ant-design/icons";
   import { Menu } from "antd";
   import { useEffect, useState } from "react";
@@ -41,15 +43,26 @@ import {
               icon: <ShopOutlined />,
             },
             {
+              label :"Installations",
+              key:"/Installations",
+              icon:<DownloadOutlined />
+            },
+            {
+              label :"Subscription",
+              key :"/Subscription",
+              icon:<BankOutlined />
+            },
+            {
+              label :"Widget",
+              key :"/Widget",
+              icon: <SettingOutlined />
+            },
+            {
               label: "Inventory",
               key: "/inventory",
               icon: <ShopOutlined />,
             },
-            {
-              label: "Orders",
-              key: "/orders",
-              icon: <ShoppingCartOutlined />,
-            },
+           
             {
               label: "Customers",
               key: "/customers",
