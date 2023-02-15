@@ -12,16 +12,12 @@ function Profile() {
         width: '40%',
         marginLeft:'25%',
         marginTop:'5%'
-      }}
-      
+      }}     
     >
       <p>Name: Your Name</p>
       <p>Email: Your Email</p>
       <p>Subscription package Name here</p>
     </Card>
-
-
-
     </div>
   )
 }
