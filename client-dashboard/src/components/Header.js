@@ -19,16 +19,16 @@ function Header() {
   }, []);
 
   return (
-    <div className="AppHeader">
+    <div className="AppHeader" style={{height:"60px"}}>
       <Image
-        width={40}
+        width={50}
         src="https://yt3.ggpht.com/ytc/AMLnZu83ghQ28n1SqADR-RbI2BGYTrqqThAtJbfv9jcq=s176-c-k-c0x00ffffff-no-rj"
       ></Image>
-      <Typography.Title>Client's Dashboard</Typography.Title>
+      <Typography.Title >Client</Typography.Title>
       <Space>
         <Badge count={10} dot>
           <MailOutlined
-            style={{ fontSize: 24 }}
+            style={{ fontSize: 30 }}
             onClick={() => {
               setCommentsOpen(true);
             }}
@@ -36,9 +36,9 @@ function Header() {
         </Badge>
         <Badge count={20}>
           <BellFilled
-            style={{ fontSize: 24 }}
+            style={{ fontSize: 30 }}
             onClick={() => {
-              setNotificationsOpen(true);
+            setNotificationsOpen(true);
            }}
           />
         </Badge>
