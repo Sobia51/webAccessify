@@ -4,7 +4,9 @@ import {
     UserOutlined,
     DownloadOutlined ,
     BankOutlined,
-    SettingOutlined
+    SettingOutlined,
+    TeamOutlined ,
+    StarOutlined
   } from "@ant-design/icons";
   import { Menu } from "antd";
   import { useEffect, useState } from "react";
@@ -22,7 +24,7 @@ import {
   
     
     return (
-      <div className="SideMenu">
+      <div className="SideMenu" style={{width:"180px"}}>
         <Menu
           className="SideMenuVertical"
           mode="vertical"
@@ -58,15 +60,19 @@ import {
               icon: <SettingOutlined />
             },
             {
-              label: "Inventory",
-              key: "/inventory",
-              icon: <ShopOutlined />,
-            },
-           
+              label :"Profile",
+              key :"/profile",
+              icon: <UserOutlined />
+            }, 
             {
               label: "Customers",
               key: "/customers",
-              icon: <UserOutlined />,
+              icon: <TeamOutlined />,
+            },
+            {
+              label: "Feedback",
+              key: "/Feedback",
+              icon: <StarOutlined />,
             },
           ]}
         ></Menu>

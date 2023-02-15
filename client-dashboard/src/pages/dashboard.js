@@ -1,6 +1,5 @@
 import {
   DollarCircleOutlined,
-  ShoppingCartOutlined,
   ShoppingOutlined,
   UserOutlined,
 } from "@ant-design/icons";
@@ -51,7 +50,7 @@ function Dashboard() {
     <Space size={20} direction="vertical">
       <Typography.Title level={4}>Dashboard</Typography.Title>
       <Space direction="horizontal">
-        <DashboardCard 
+        {/* <DashboardCard 
           icon={
             <ShoppingCartOutlined
               style={{
@@ -65,7 +64,7 @@ function Dashboard() {
           }
           title={"Orders"}
           value={orders}
-        />
+        /> */}
         <DashboardCard
           icon={
             <ShoppingOutlined
@@ -78,7 +77,7 @@ function Dashboard() {
               }}
             />
           }
-          title={"Inventory"}
+          title={"Active Features"}
           value={inventory}
         />
         <DashboardCard
@@ -122,7 +121,7 @@ function Dashboard() {
 
 function DashboardCard({ title, value, icon }) {
   return (
-    <Card style={{width:'250px'}}>
+    <Card style={{width:'300px'}}>
       <Space direction="horizontal">
         {icon}
         <Statistic title={title} value={value} />
@@ -145,7 +144,7 @@ function RecentOrders() {
   return (
     <>
       <Typography.Text>Recent Features</Typography.Text>
-      <Table style={{width:"500px"}}
+      <Table style={{width:"400px"}}
         columns={[
           {
             title: "Title of Feature",
@@ -202,13 +201,13 @@ function DashboardChart() {
       },
       title: {
         display: true,
-        text: "Order Revenue",
+        text: "User Revenue",
       },
     },
   };
 
   return (
-    <Card style={{ width: 500, height: 250 }}>
+    <Card style={{ width: 550, height: 250 }}>
       <Bar options={options} data={reveneuData} />
     </Card>
   );
