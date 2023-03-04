@@ -36,7 +36,7 @@ function Header() {
         </Badge>
         <Badge count={20}>
           <BellFilled
-            style={{ fontSize: 25 }}
+            style={{ fontSize: 2 }}
             onClick={() => {
             setNotificationsOpen(true);
            }}
