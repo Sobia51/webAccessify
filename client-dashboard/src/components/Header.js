@@ -28,7 +28,7 @@ function Header() {
       <Space>
         <Badge count={10} dot>
           <MailOutlined
-            style={{ fontSize: 25 }}
+            style={{ fontSize: 24 }}
             onClick={() => {
               setCommentsOpen(true);
             }}
