@@ -15,7 +15,7 @@ function Header() {
     });
     getOrders().then((res) => {
       setOrders(res.products);
-    })
+    });
   }, []);
 
   return (
