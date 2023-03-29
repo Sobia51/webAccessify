@@ -9,7 +9,14 @@ function Header() {
   const [commentsOpen, setCommentsOpen] = useState(false);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
 
-  
+  useEffect(() => {
+    getComments().then((res) => {
+      setComments(res.comments);
+    });
+    getOrders().then((res) => {
+      setOrders(res.products);
+    });
+  }, []);
 
   return (
     <div className="AppHeader" style={{height:"60px"}}>
