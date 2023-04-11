@@ -1,2 +1,2 @@
 # webAccessify
-Final year project 
+client side's dashboard 
